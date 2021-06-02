@@ -1,0 +1,22 @@
+{
+  "name": "loruki-website",
+  "version": "1.0.0",
+  "description": "Loruki Website (originally by Traversy Media)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lhzaccarelli/loruki-website.git"
+  },
+  "author": "Laerte H Zaccarelli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lhzaccarelli/loruki-website/issues"
+  },
+  "homepage": "https://github.com/lhzaccarelli/loruki-website#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  }
+}
