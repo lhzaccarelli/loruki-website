@@ -44,10 +44,38 @@ img {
     height: 70px;
 }
 
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 1px #eee solid;
+}
+
+.navbar .flex {
+    /* Gets the space with no items and puts it in between the items */
+    /* So, if there are only 2 items, one is gonna be on the left and the other on the right of the box */
+    justify-content: space-between;
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
     /** Get rid of H1 top margin */
     overflow: auto;
     padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Certifies that the items don't go out of the box */
+    height: 100%;
 }
