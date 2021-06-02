@@ -37,3 +37,17 @@ img {
     /** Responsive img - Sticks to the container */
     width: 100%;
 }
+
+.navbar {
+    background-color: #047aed;
+    color: #fff;
+    height: 70px;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    /** Get rid of H1 top margin */
+    overflow: auto;
+    padding: 0 40px;
+}
