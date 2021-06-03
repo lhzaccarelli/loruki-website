@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+/*** Forma de atribuir custom properties. Root para poder se usado em todo o código. */
+:root {
+    /** '--' é o que define uma propriedade */
+    --primary-color: #047aed;
+}
+
 /** Reset */
 * {
     box-sizing: border-box;
@@ -38,8 +44,9 @@ img {
     width: 100%;
 }
 
+/* Navbar */
 .navbar {
-    background-color: #047aed;
+    background-color: var(--primary-color);
     color: #fff;
     height: 70px;
 }
@@ -64,6 +71,29 @@ img {
     justify-content: space-between;
 }
 
+/* Showcase */
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+/* Utilities */
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -79,3 +109,17 @@ img {
     /* Certifies that the items don't go out of the box */
     height: 100%;
 }
+
+.grid {
+    display: grid;
+    /** 'fr' é uma fração (fraction) */
+    grid-template-columns: 1fr 1fr;
+    /** Outra forma de fazer a msma coisa de cima */
+    grid-template-columns: repeat(2, 1fr);
+    /** Define um gap entre as duas frações */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /** Ocupa 100% do container */
+}
+
