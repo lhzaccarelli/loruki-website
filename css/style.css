@@ -158,3 +158,16 @@ img {
     font-size: 20px;
     font-weight: bold;
 }
+
+/* Cli */
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repear(2, 1fr);
+}
+
+/* Pega apenas o primeiro filho */
+.cli .grid > *:first-child {
+    /** Este comando serve para utilizar 2 colunas, algo como o colspan da table */
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
