@@ -4,6 +4,9 @@
 :root {
     /** '--' é o que define uma propriedade */
     --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
 }
 
 /** Reset */
@@ -170,4 +173,9 @@ img {
     /** Este comando serve para utilizar 2 colunas, algo como o colspan da table */
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+}
+
+/* Cloud */
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
 }
