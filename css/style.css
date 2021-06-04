@@ -90,6 +90,36 @@ img {
 .showcase .grid {
     grid-template-columns: 55% 45%;
     gap: 30px;
+    /** Esta propriedade deixa os componentes que ultrapassarem a margem sem gerar uma barra de nav */
+    overflow: visible;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'], 
+.showcase-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus {
+    /** Borda para quando clica no input */
+    outline: none;
 }
 
 /* Utilities */
@@ -123,3 +153,11 @@ img {
     height: 100%; /** Ocupa 100% do container */
 }
 
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
