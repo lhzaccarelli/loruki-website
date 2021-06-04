@@ -201,3 +201,8 @@ img {
     /* Deixa os cards para cima */
     transform: translateY(-10px);
 }
+
+/* Footer */
+.footer .social a {
+    margin: 0 10px;
+}
