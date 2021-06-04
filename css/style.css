@@ -122,6 +122,24 @@ img {
     outline: none;
 }
 
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    /* Utilizado para rotações, etc */
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg); /* Chrome */
+    -moz-transform: skewY(-3deg); /* Firefox */
+    -ms-transform: skewY(-3deg); /* Edge/IE */
+    transform: skewY(-3deg);
+}
+
 /* Utilities */
 
 .container {
