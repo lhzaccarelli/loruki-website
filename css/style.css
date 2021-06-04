@@ -140,61 +140,21 @@ img {
     transform: skewY(-3deg);
 }
 
-/* Utilities */
-
-.container {
-    max-width: 1110px;
-    margin: 0 auto;
-    /** Get rid of H1 top margin */
-    overflow: auto;
-    padding: 0 40px;
+/* Stats */
+.stats {
+    padding-top: 100px;
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Certifies that the items don't go out of the box */
-    height: 100%;
+.stats-heading {
+    max-width: 500px;
+    margin: auto; /* centraliza */
 }
 
-.grid {
-    display: grid;
-    /** 'fr' é uma fração (fraction) */
-    grid-template-columns: 1fr 1fr;
-    /** Outra forma de fazer a msma coisa de cima */
-    grid-template-columns: repeat(2, 1fr);
-    /** Define um gap entre as duas frações */
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /** Ocupa 100% do container */
+.stats .grid h3 {
+    font-size: 35px;
 }
 
-.card {
-    background-color: #fff;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    padding: 20px;
-    margin: 10px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-
-.btn-outline {
-    background-color: transparent;
-    border: 1px #fff solid;
-}
-
-.btn:hover {
-    transform: scale(0.98);
+.stats grid p {
+    font-size: 20px;
+    font-weight: bold;
 }
